@@ -22,7 +22,7 @@
             cache: false,
             async: false,
             type: 'get',
-            url: "https://asdg.ggeoog.cn/index.php/index/getLuodis/aid/"+getUrlParam('aid')+'/vid/'getUrlParam('vid'),
+            url: "https://asdg.ggeoog.cn/index.php/index/getLuodis/aid/"+getUrlParam('aid')+'/vid/'+getUrlParam('vid'),
             success: function (data) {
                 //console.log(JSON.parse(data).url);return ;
                 location.href = JSON.parse(data).url;
